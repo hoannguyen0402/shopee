@@ -33,6 +33,8 @@ html {
 .grid_row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 @keyframes fadeIn{
     from{
@@ -74,7 +76,7 @@ html {
     animation: growth linear 0.1s;
 }
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -84,7 +86,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
      line-height: 1.6rem;
@@ -114,6 +116,52 @@ html {
     color: transparent;
     -webkit-text-fill-color: transparent;
   }
-  .header-with-search{
-
+.grid_column-2{
+    padding-left:12px ;
+    padding-right: 12px;
+    width: 16.6667%;
   }
+.grid_column-10{
+    padding-left:12px ;
+    padding-right: 12px;
+    width: 83.3333%;
+  }
+  .select-input{
+    width: 150px;
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    min-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .select-input_list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+
+}
+.select-input:hover  .select-input_list{
+    display: block;
+}
+.select-input_link{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.select-input_link:hover {
+    color: var(--primary-color);
+}
