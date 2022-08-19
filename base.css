@@ -33,6 +33,7 @@ html {
 .grid_row{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 40px;
 }
 @keyframes fadeIn{
     from{
@@ -74,7 +75,7 @@ html {
     animation: growth linear 0.1s;
 }
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -84,7 +85,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
      line-height: 1.6rem;
@@ -114,6 +115,94 @@ html {
     color: transparent;
     -webkit-text-fill-color: transparent;
   }
-  .header-with-search{
-
+.grid_column-2{
+    padding-left:5px ;
+    padding-right: 5px;
+    width: 16.6667%;
   }
+.grid_column-10{
+    padding-left:5px ;
+    padding-right: 5px;
+    width: 83.3333%;
+  }
+  .select-input{
+    width: 150px;
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    min-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .select-input_list{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+
+}
+.select-input:hover  .select-input_list{
+    display: block;
+}
+.select-input_link{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.select-input_link:hover {
+    color: var(--primary-color);
+}
+.grid_column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.pagination-item{
+    margin: 0 12px;
+}
+.pagination-item_link{
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+
+}
+.home-product-item_img{
+    background-image: url(https://cf.shopee.vn/file/6c7c9710de2db17650868e49d525866b);
+}
+
+.pagination-item--active .pagination-item_link{
+    background-color:var(--primary-color) ;
+    color: var(--white-color);
+}
+.pagination-item--active .pagination-item_link:hover{
+    background-color: #ed5c3f;
+}
+.home-product_pagination{
+    margin: 50px 0 32px 0;
+}
